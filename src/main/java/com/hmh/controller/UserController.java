@@ -19,9 +19,10 @@ import java.util.Map;
 @RestController
 @RequestMapping(value = "/users")
 public class UserController extends BaseController{
-    @Resource(name = "userServiceImpl")
+    @Resource(name = "userService")
     private UserService userService;
-    @Resource(name = "mailServiceImpl")
+
+    @Resource(name = "mailService")
     private MailService mailService;
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json; charset=utf-8")

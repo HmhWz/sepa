@@ -16,7 +16,7 @@ import javax.mail.internet.MimeMessage;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
+@Service("mailService")
 public class MailServiceImpl implements MailService {
 
     protected Logger logger = Logger.getLogger(this.getClass());
